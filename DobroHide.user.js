@@ -41,8 +41,7 @@ function loadSettings() {
         return JSON.parse(threads);
     }
     else {
-        return "Впишите сюда заголовки тредов — по одному на линию.\n" +
-        "Например:\nПонитред\nРандомная пикча-тред\nБессоница-тред";
+        return new Array('Впишите сюда заголовки тредов — по одному на линию. Например:', 'Понитред', 'Official™ Rozen Maiden Thread');
     }
 }
 
