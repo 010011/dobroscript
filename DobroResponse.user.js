@@ -11,11 +11,6 @@
 // generate reply link with popup
 function reply_link(to_post, from_post) {
     var a = document.createElement('a');
-    $.each( to_post.attributes, function( index, attr ) {
-        if (attr.name == 'onmouseover') {
-            //  FUCK LOR
-        }
-    } );
     // ) and #i are dirty hacks for valid links in op post
     // Узнать, почему на лоре крешится onmouseover
     var onMouse = $(to_post).attr('onmouseover').replace($(to_post).text().substring(2) + ')', from_post  + ')');
