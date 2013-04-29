@@ -8,6 +8,7 @@
 // @grant       GM_setValue
 // @version     1.0
 // @downloadURL https://github.com/010011/dobroscript/blob/master/DobroHide.user.js
+// @updateURL   https://github.com/010011/dobroscript/blob/master/DobroHide.user.js
 // @require     http://zeptojs.com/zepto.min.js
 // ==/UserScript==
 
