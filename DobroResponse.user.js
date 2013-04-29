@@ -13,9 +13,12 @@
 // generate reply link with popup
 function reply_link(to_post, from_post) {
     var a = document.createElement('a');
+    var onMouse = '';
+    // links to other boards have no onMouseOver
+    if ($(to_post).attr('onmouseover') != undefined) {
+      onMouse = $(to_post).attr('onmouseover').replace($(to_post).text().substring(2) + ')', from_post  + ')');
+    }
     // ) and #i are dirty hacks for valid links in op post
-    // Узнать, почему на лоре крешится onmouseover
-    var onMouse = $(to_post).attr('onmouseover').replace($(to_post).text().substring(2) + ')', from_post  + ')');
     var href =    $(to_post).attr('href').replace('#i' + $(to_post).text().substring(2), '#i' + from_post);
     $(a).attr({
         'onMouseOver': onMouse,
