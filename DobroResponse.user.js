@@ -5,6 +5,7 @@
 // @include     http://dobrochan.ru/*
 // @grant       none
 // @version     1
+// @downloadURL https://github.com/010011/dobroscript/blob/master/DobroResponse.user.js
 // @require     http://zeptojs.com/zepto.min.js
 // ==/UserScript==
 
